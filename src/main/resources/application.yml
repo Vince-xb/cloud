@@ -1,0 +1,18 @@
+mybatis:
+  type-aliases-package: com.standup.model
+  configuration:
+    map-underscore-to-camel-case: true
+
+spring:
+  application:
+    name: cloud-a
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://43.138.62.236:3306/cloud
+    username: root
+    password: 123456
+
+
+server:
+  port: 8099
