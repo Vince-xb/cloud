@@ -26,16 +26,16 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.standup.model" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.by.model" targetProject="src/main/java">
             <property name="enableSubPackages" value="false"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="com.standup.mapping" targetProject="src/main/java">
+        <sqlMapGenerator targetPackage="com.by.mapping" targetProject="src/main/java">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator targetPackage="com.standup.mapper" type="ANNOTATEDMAPPER" targetProject="src/main/java">
+        <javaClientGenerator targetPackage="com.by.mapper" type="ANNOTATEDMAPPER" targetProject="src/main/java">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
 

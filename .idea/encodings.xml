@@ -3,5 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../JavaTools/repository/org/springframework/boot/spring-boot-starter-parent/2.7.1/src/main/resources" charset="UTF-8" />
   </component>
 </project>

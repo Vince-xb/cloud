@@ -1,5 +1,5 @@
 mybatis:
-  type-aliases-package: com.standup.model
+  type-aliases-package: com.by.model
   configuration:
     map-underscore-to-camel-case: true
 
@@ -16,3 +16,12 @@ spring:
 
 server:
   port: 8099
+#
+#logging:
+#  level:
+#    root: info
+#  file:
+#    name: /home/logs/cloud.log
+#  pattern:
+#    console: "%d{yyyy/MM/dd-HH:mm:ss} [%thread] %-5level %logger{50}- %msg%n"
+#    file: "%d{yyyy/MM/dd-HH:mm:ss} ---- [%thread] %-5level %logger{50}- %msg%n"
