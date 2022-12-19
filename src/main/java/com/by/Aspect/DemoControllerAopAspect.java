@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @Component
 @Aspect
-public class DemoAopAspect {
+public class DemoControllerAopAspect {
 
     @Before("execution(public * com.by.controller..*(..))")
     public void doBefore(JoinPoint joinPoint) {
@@ -30,17 +30,6 @@ public class DemoAopAspect {
 
     private void printInfos(String methodName,Object[] args){
         String body = "";
-//        for(Object obj : args ) {
-//            JSONObject jsonObj = JSON.parseObject(JSON.toJSONString(obj));
-//            if(!(obj instanceof HttpServletRequest) && !(obj instanceof HttpServletResponse)){
-//                if(jsonObj.containsKey("body")){
-//                    JSONObject bodyJsonObj = jsonObj.getJSONObject("body");
-//                    body = JSON.toJSONString(bodyJsonObj);
-//                    break;
-//                }
-//            }
-//
-//        }
         log.info("methodName: " + methodName + ", methodArgs: "+ body);
     }
 

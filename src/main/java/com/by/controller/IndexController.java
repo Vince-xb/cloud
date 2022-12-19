@@ -2,9 +2,7 @@ package com.by.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -13,13 +11,12 @@ import javax.servlet.http.HttpServletRequest;
  *
  * @author macbookpro
  */
-@Controller
+@RestController
 @RequestMapping("/")
 @Slf4j
 public class IndexController {
 
     @GetMapping("index")
-    @ResponseBody
     public String index(HttpServletRequest request) {
         //http://localhost:8099/index
         log.info("request:" + request.getRequestURL());
@@ -27,10 +24,13 @@ public class IndexController {
     }
 
     @GetMapping
-    @ResponseBody
     public String hello() {
         return "hello world";
     }
 
-
+    @GetMapping("aop/{a}")
+    public String aopTest(@PathVariable("a")int a) {
+        log.info("a: {}",a);
+        return "AOP" + a;
+    }
 }
