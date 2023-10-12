@@ -27,4 +27,9 @@ public class ThreadPoolTest {
         }
         executor.shutdown();
     }
+
+    public void TheadTest(){
+        ThreadLocal local = new ThreadLocal();
+
+    }
 }
