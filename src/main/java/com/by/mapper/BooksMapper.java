@@ -1,12 +1,13 @@
 package com.by.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.by.model.Books;
 import java.util.List;
 
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.type.JdbcType;
 @Mapper
-public interface BooksMapper {
+public interface BooksMapper extends BaseMapper<Books> {
     /**
      *
      * @mbg.generated
